@@ -1,0 +1,15 @@
+.parallax {
+    /*images used */
+    background-image:url("./images/placeholder.png");
+
+    min-height:500px;
+    /*Creat the parallax scrolling effect */
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    padding-top: 50px;
+}
