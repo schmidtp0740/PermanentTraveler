@@ -1,15 +1,12 @@
-.parallax {
-    /*images used */
-    background-image:url("./images/Newer Logo.png");
-
-    min-height:500px;
-    /*Creat the parallax scrolling effect */
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html, body{
+    height: 100%;
 }
 
-body {
-    padding-top: 50px;
+
+body, header {
+    /*images used */
+    background-image:url("./images/londongreenfilter.jpg");
+    height: 100%;
+
+    background-size: cover;
 }
