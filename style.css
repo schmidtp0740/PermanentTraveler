@@ -24,7 +24,7 @@ nav, a{
     overflow: hidden;
     display:block;
     color: white;
-    padding: 2vh 6vh;
+    padding: 10px 6vh;
     text-align: center;
     font-size: 19px;
     text-decoration: none;
@@ -34,11 +34,16 @@ nav, a{
 
 .nav-scrolled{
     position: fixed;
-    padding: 0 10vh;
+
     width: 100%;
     top: 0;
     z-index: 1;
 }
+
+.travelSection-scrolled{
+    margin-top: 60px;
+}
+
 
 .blakeBackground{
     background-image: url("./images/section-backdrop.jpg");
@@ -92,7 +97,7 @@ nav a:hover {
 }
 
 
-.staircaseParallax{
+#staircaseParallax{
     background-image: url("./images/italyStaircase.jpg");
     height:70vh;
     background-attachment: fixed;
@@ -112,6 +117,17 @@ nav a:hover {
     color: black;
 }
 
+.contactForm{
+    padding-top: 30px;
+}
+
+#contact{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
 footer{
     background-color: #567b87;
+    justify-content: center;
+    text-align: center;
 }

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Permanent Traveler</title>
-    <link rel="shortcut icon" href="images/placeholder.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
@@ -15,29 +14,30 @@
     <![endif]-->
   </head>
   <body>
+      <div class="container-fluid">
+
 
       <!-- full screen landing page -->
-      <header>
+      <header class="row">
           <img src="./images/Newer Logo.png" class="logo"/>
-
       </header>
 
       <!-- navbar -->
-      <nav>
-          <a class="lileft nava" href="#">travel</a>
+      <nav class="row">
+          <a class="lileft nava" href="#travelSection">travel</a>
           <a class="lileft nava" href="#">tattoos</a>
           <a class="liright nava" href="#">about</a>
-          <a class="liright nava" href="#">contact</a>
+          <a class="liright nava" href="#contact">contact</a>
       </nav>
 
-      <section id="travelSection">
+      <section id="travelSection" class="row">
           <img id="paris" src="images/paris.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
           <img id="italy" src="images/italy.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
           <img id="croatia" src="images/Croatia.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
           <img id="london" src="images/London.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
       </section>
 
-      <section class="missionStatement" >
+      <section class="missionStatement row" >
           <h3 >
               Pick from any of our designated locations
               <br />and start  your journey as an official
@@ -45,11 +45,11 @@
           </h3>
       </section>
 
-      <section class="staircaseParallax">
+      <section id="staircaseParallax" class="row">
           <!-- Parallax of italy staircase -->
       </section>
 
-      <section class="missionStatement ">
+      <section class="missionStatement row">
           <!-- text align is center -->
           <h2>Mission Statement</h2>
           <h1>IT'S ALL ABOUT THE EXPERIANCE. <br />
@@ -59,7 +59,7 @@
       </section>
 
       <!-- parallax of blake in the background with share your experiance -->
-      <section class="blakeBackground" >
+      <section class="blakeBackground row" >
           <div id="experianceStatement">
               <!-- right aligned 50% of image -->
               <h1>
@@ -72,24 +72,29 @@
           </div>
       </section>
 
-      <section>
-          <img src="./images/Newer Logo.png" />
-          <form>
-              <input placeholder="NAME" />
-              <input placeholder="EMAIL" />
-              <input placeholder="TELL IS WHERE YOU WANT TO GO" />
-          </form>
+      <section id="contact" class="row">
+          <div class=" col-md-6 col-md-offset-3 contactForm">
+              <img class="col-md-offset-2" src="./images/Newer Logo.png" />
+              <form>
+
+                  <input class="form-control form-group" placeholder="NAME" />
+                  <input class="form-control form-group" placeholder="EMAIL" />
+                  <input class="form-control form-group" placeholder="TELL IS WHERE YOU WANT TO GO" />
+              </form>
+          </div>
+
       </section>
-      <footer>
-          <p>
-              1609 8TH ST. E. MENOMONIE WI 54751
-              PERMANENTTRAVELER.COM 970-275-5176
-          </p>
-          <img id="facebook" src="./images/facebook.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
-          <img id="instagram" src="./images/instagram.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+      <footer class="footer row">
+              <p>
+                  1609 8TH ST. E. MENOMONIE WI 54751<br />
+                  PERMANENTTRAVELER.COM 970-275-5176
+              </p>
+              <img id="facebook" src="./images/facebook.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+              <img id="instagram" src="./images/instagram.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
       </footer>
 
 
+  </div><!-- container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

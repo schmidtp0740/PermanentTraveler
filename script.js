@@ -47,13 +47,17 @@ function offHover(element){
 }
 
 var mn = $("nav");
+    ts = $("#travelSection");
     mns = "nav-scrolled";
+    tsc ="travelSection-scrolled";
     hdr = $('header').height();
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > hdr ) {
     mn.addClass(mns);
+    ts.addClass(tsc);
   } else {
     mn.removeClass(mns);
+    ts.removeClass(tsc);
   }
 });
