@@ -11,6 +11,15 @@ function onHover(element){
     else if(element.id === "london"){
         element.setAttribute('src', "./images/london-hover.png");
     }
+    else if(element.id === "shareExperiance"){
+        element.setAttribute('src', "./images/shareexperience-hover.png");
+    }
+    else if(element.id === "facebook"){
+        element.setAttribute('src', "./images/facebook-hover.png");
+    }
+    else if(element.id === "instagram"){
+        element.setAttribute('src', "./images/instagram-hover.png");
+    }
 }
 
 function offHover(element){
@@ -26,4 +35,25 @@ function offHover(element){
     else if(element.id === "london"){
         element.setAttribute('src', "./images/London.png");
     }
+    else if(element.id === "shareExperiance"){
+        element.setAttribute('src', "./images/shareexperiencebutton.png");
+    }
+    else if(element.id === "facebook"){
+        element.setAttribute('src', "./images/facebook.png");
+    }
+    else if(element.id === "instagram"){
+        element.setAttribute('src', "./images/instagram.png");
+    }
 }
+
+var mn = $("nav");
+    mns = "nav-scrolled";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});

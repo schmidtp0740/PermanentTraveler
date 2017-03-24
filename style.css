@@ -14,12 +14,39 @@ header {
     justify-content: center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav{
+    background-color: #A6CBAE;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+nav, a{
     overflow: hidden;
-    background-color: turquoise;
+    display:block;
+    color: white;
+    padding: 2vh 6vh;
+    text-align: center;
+    font-size: 19px;
+    text-decoration: none;
+
+}
+
+
+.nav-scrolled{
+    position: fixed;
+    padding: 0 10vh;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.blakeBackground{
+    background-image: url("./images/section-backdrop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center 10px;
+
 }
 
 .lileft  {
@@ -29,24 +56,61 @@ ul {
 .liright{
     float:right;
 }
-li a{
-    display:block;
-    color: white;
-    text-align: center;
-    padding: 3vh 16px;
-    text-decoration: none;
-}
 
-li a:hover {
+nav a:hover {
     background-color: #111;
     color: white;
 }
-section img{
+
+#shareExperiance{
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.4);
+    width: 50%;
+
 }
 
-.sectionimg{
+
+#travelSection{
+     height:60vh;
+}
+
+.travelImages{
     width: 25%;
-    height: 75vh;
+    height: 60vh;
     padding: 0;
     margin: 0;
+}
+
+.missionStatement{
+    height: 50vh;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+
+.staircaseParallax{
+    background-image: url("./images/italyStairCase.jpg");
+    height:70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#experianceStatement{
+    padding-top: 5vh;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    float: right;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    color: black;
+}
+
+footer{
+    background-color: #567b87;
 }

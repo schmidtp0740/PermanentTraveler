@@ -24,30 +24,75 @@
 
       <!-- navbar -->
       <nav>
-          <ul>
-              <li class="lileft">
-                  <a href="#">travel</a>
-              </li>
-              <li class="lileft">
-                  <a href="#">tattoos</a>
-              </li>
-              <li class="liright">
-                  <a href="#">about</a>
-              </li>
-              <li class="liright">
-                  <a href="#">contact</a>
-              </li>
-          </ul>
+          <a class="lileft nava" href="#">travel</a>
+          <a class="lileft nava" href="#">tattoos</a>
+          <a class="liright nava" href="#">about</a>
+          <a class="liright nava" href="#">contact</a>
       </nav>
-      <section >
-          <img id="paris" src="images/paris.png" class="sectionimg col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
-          <img id="italy" src="images/italy.png" class="sectionimg col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
-          <img id="croatia" src="images/Croatia.png" class="sectionimg col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
-          <img id="london" src="images/London.png" class="sectionimg col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+
+      <section id="travelSection">
+          <img id="paris" src="images/paris.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+          <img id="italy" src="images/italy.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+          <img id="croatia" src="images/Croatia.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+          <img id="london" src="images/London.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
       </section>
 
-      <script src="script.js"></script>
+      <section class="missionStatement" >
+          <h3 >
+              Pick from any of our designated locations
+              <br />and start  your journey as an official
+              <br/>Permanet Traveler
+          </h3>
+      </section>
+
+      <section class="staircaseParallax">
+          <!-- Parallax of italy staircase -->
+      </section>
+
+      <section class="missionStatement ">
+          <!-- text align is center -->
+          <h2>Mission Statement</h2>
+          <h1>IT'S ALL ABOUT THE EXPERIANCE. <br />
+              TAKE YOUR TALENTS AND <br />
+              PASSIONS EVERYWHERE. <br />
+              BECOME THE PERMANENT TRAVELER</h1>
+      </section>
+
+      <!-- parallax of blake in the background with share your experiance -->
+      <section class="blakeBackground" >
+          <div id="experianceStatement">
+              <!-- right aligned 50% of image -->
+              <h1>
+                  How do you make a memory. <br />
+                  Through photography, art, or <br />
+                  maybe getting a travel tattoo? We <br />
+                  want to share your experiance!
+              </h1>
+              <img id="shareExperiance" src="images/shareexperiencebutton.png" onmouseover="onHover(this);" onmouseout="offHover(this);" />
+          </div>
+      </section>
+
+      <section>
+          <img src="./images/Newer Logo.png" />
+          <form>
+              <input placeholder="NAME" />
+              <input placeholder="EMAIL" />
+              <input placeholder="TELL IS WHERE YOU WANT TO GO" />
+          </form>
+      </section>
+      <footer>
+          <p>
+              1609 8TH ST. E. MENOMONIE WI 54751
+              PERMANENTTRAVELER.COM 970-275-5176
+          </p>
+          <img id="facebook" src="./images/facebook.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+          <img id="instagram" src="./images/instagram.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+      </footer>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
