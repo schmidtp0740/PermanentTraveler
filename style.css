@@ -1,12 +1,54 @@
-html, body{
-    height: 100%;
-}
 
 
-body, header {
+
+header {
     /*images used */
     background-image:url("./images/londongreenfilter.jpg");
-    height: 100%;
-
+    height:100vh;
     background-size: cover;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: turquoise;
+}
+
+.lileft  {
+    float:left;
+}
+
+.liright{
+    float:right;
+}
+li a{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 3vh 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+section img{
+}
+
+.sectionimg{
+    width: 25%;
+    height: 75vh;
+    padding: 0;
+    margin: 0;
 }
