@@ -1,57 +1,52 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url("./fonts/bebas_neue/TTF's/BebasNeue Regular.ttf") format("truetype"),
+    url("./fonts/bebas_neue/BebasNeue Regular.otf") format("opentype");
+}
 
-header {
+@font-face {
+    font-family: BebasNeue;
+    font-weight: bold;
+    src: url("./fonts/bebas_neue/TTF's/BebasNeue Bold.ttf") format("truetype"),
+    url("./fonts/bebas_neue/BebasNeue Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url("./fonts/quicksand/Quicksand-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Quicksand;
+    font-weight: bold;
+    src: url("./fonts/quicksand/Quicksand-Bold.otf") format("opentype");
+}
+
+#splashBackground {
     /*images used */
-    background-image:url("./images/londongreenfilter.jpg");
-    height:100vh;
+    background-image:url("./images/splashPageBackground.jpg");
+    height: 100vh;
+    width: inherit;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    padding-top: 25vh;
-    align-items: center;
-    justify-content: center;
+#nav2 {
+    margin-top: 30px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
 }
+
 
 nav{
-    background-color: #A6CBAE;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    background-color: #567D85;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     z-index: 1;
-}
-
-nav, a{
-    overflow: hidden;
-    display:block;
-    color: white;
-    padding: 10px 6vh;
-    text-align: center;
-    font-size: 19px;
-    text-decoration: none;
-
-}
-
-
-.nav-scrolled{
-    position: fixed;
-
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-.travelSection-scrolled{
-    margin-top: 60px;
-}
-
-
-.blakeBackground{
-    background-image: url("./images/section-backdrop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-position: center 10px;
-
 }
 
 .lileft  {
@@ -62,21 +57,38 @@ nav, a{
     float:right;
 }
 
+nav, a{
+    overflow: hidden;
+    display:block;
+    color: #FFFFFF;
+    padding: 10px 15vh;
+    text-align: center;
+    font-size: 25px;
+    font-family: Quicksand;
+    text-decoration: none;
+
+
+}
+
 nav a:hover {
-    background-color: #111;
-    color: white;
+    color: #FFFFFF;
 }
 
-#shareExperiance{
-    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.4);
-    width: 50%;
-    border-radius: 10px 10px;
+.nav-scrolled{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 
 }
 
+.travelSection-scrolled{
+    margin-top: 60px;
+}
 
 #travelSection{
      height:60vh;
+     z-index: 0;
 }
 
 .travelImages{
@@ -84,9 +96,10 @@ nav a:hover {
     height: 60vh;
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 
-.missionStatement{
+#travelStatement{
     height: 50vh;
     display: block;
     display: flex;
@@ -94,8 +107,12 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align:center;
+    font-family: Quicksand;
 }
 
+#travelStatementParagraph {
+    font-size: 50px;
+}
 
 #staircaseParallax{
     background-image: url("./images/italyStaircase.jpg");
@@ -105,6 +122,41 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.missionStatement{
+    height: 50vh;
+    width: auto;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-family: BebasNeue;
+
+}
+
+.missionStatementParagraph {
+    width: 75%;
+    font-family: BebasNeue;
+    font-size: 50px;
+}
+
+.blakeBackground{
+    background-image: url("./images/section-backdrop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center 10px;
+    background-attachment: fixed;
+}
+
+#shareExperiance{
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    border-radius: 10px 10px;
+}
+
 #experianceStatement{
     padding-top: 5vh;
     width: 60%;
@@ -112,9 +164,11 @@ nav a:hover {
     text-align: center;
     float: right;
     justify-content: center;
-    color: white;
+    color: #FFFFFF;
     font-size: 30px;
     color: black;
+    font-family: Quicksand;
+    font-weight: bold;
 }
 
 .contactForm{
@@ -122,12 +176,26 @@ nav a:hover {
 }
 
 #contact{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 40vh;
 }
+
+section div form {
+    width:30%;
+}
+
 footer{
+    color: #FFFFFF;
+    font-family: BebasNeue;
+    font-size: 30px;
+    height: 20vh;
     background-color: #567b87;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }

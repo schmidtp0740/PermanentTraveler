@@ -20,6 +20,9 @@ function onHover(element){
     else if(element.id === "instagram"){
         element.setAttribute('src', "./images/instagram-hover.png");
     }
+    else if(element.id === "nav2"){
+        element.setAttribute('src', "./images/dropdownbutton-hover.png");
+    }
 }
 
 function offHover(element){
@@ -44,13 +47,16 @@ function offHover(element){
     else if(element.id === "instagram"){
         element.setAttribute('src', "./images/instagram.png");
     }
+    else if(element.id === "nav2"){
+        element.setAttribute('src', "./images/dropdownbutton.png");
+    }
 }
 
 var mn = $("nav");
     ts = $("#travelSection");
     mns = "nav-scrolled";
     tsc ="travelSection-scrolled";
-    hdr = $('header').height();
+    hdr = $('#splashBackground').height();
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > hdr ) {

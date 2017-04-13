@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Permanent Traveler</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -16,18 +15,18 @@
   <body>
       <div class="container-fluid">
 
-
       <!-- full screen landing page -->
-      <header class="row">
-          <img src="./images/Newer Logo.png" class="logo"/>
-      </header>
+      <section id="splashBackground" class="row">
+          <img src="./images/logo.png" id="logo"/>
+          <a href="#navbar"><img id="nav2" src="./images/dropdownbutton.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/></a>
+      </section>
 
       <!-- navbar -->
-      <nav class="row">
-          <a class="lileft nava" href="#travelSection">travel</a>
+      <nav class="row" id="navbar">
+          <a class="lileft nava" href="#">travel</a>
           <a class="lileft nava" href="#">tattoos</a>
           <a class="liright nava" href="#">about</a>
-          <a class="liright nava" href="#contact">contact</a>
+          <a class="liright nava" href="#">contact</a>
       </nav>
 
       <section id="travelSection" class="row">
@@ -37,12 +36,12 @@
           <img id="london" src="images/London.png" class="travelImages col-xs-3" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
       </section>
 
-      <section class="missionStatement row" >
-          <h3 >
+      <section class="row" id="travelStatement">
+          <h1 id="travelStatementParagraph">
               Pick from any of our designated locations
               <br />and start  your journey as an official
               <br/>Permanet Traveler
-          </h3>
+          </h1>
       </section>
 
       <section id="staircaseParallax" class="row">
@@ -51,10 +50,11 @@
 
       <section class="missionStatement row">
           <!-- text align is center -->
-          <h2>Mission Statement</h2>
-          <h1>IT'S ALL ABOUT THE EXPERIANCE. <br />
+          <h1 class="missionStatementParagraph">
+              Mission Statement<br />
+              IT'S ALL ABOUT THE EXPERIENCE.
               TAKE YOUR TALENTS AND <br />
-              PASSIONS EVERYWHERE. <br />
+              PASSIONS EVERYWHERE.<br />
               BECOME THE PERMANENT TRAVELER</h1>
       </section>
 
@@ -63,20 +63,18 @@
           <div id="experianceStatement">
               <!-- right aligned 50% of image -->
               <h1>
-                  How do you make a memory. <br />
+                  How do you make a memory.
                   Through photography, art, or <br />
-                  maybe getting a travel tattoo? We <br />
+                  maybe getting a travel tattoo? We
                   want to share your experiance!
               </h1>
-              <img id="shareExperiance" src="images/shareexperiencebutton.png" onmouseover="onHover(this);" onmouseout="offHover(this);" />
+              <a href="#contact" ><img id="shareExperiance" src="images/shareexperiencebutton.png" onmouseover="onHover(this);" onmouseout="offHover(this);" /></a>
           </div>
       </section>
 
-      <section id="contact" class="row">
-          <div class=" col-md-6 col-md-offset-3 contactForm">
-              <img class="col-md-offset-2" src="./images/Newer Logo.png" />
+      <section class="row">
+          <div class="contactForm" id="contact">
               <form>
-
                   <input class="form-control form-group" placeholder="NAME" />
                   <input class="form-control form-group" placeholder="EMAIL" />
                   <input class="form-control form-group" placeholder="TELL IS WHERE YOU WANT TO GO" />
@@ -87,10 +85,11 @@
       <footer class="footer row">
               <p>
                   1609 8TH ST. E. MENOMONIE WI 54751<br />
-                  PERMANENTTRAVELER.COM 970-275-5176
+                  PERMANENTTRAVELER.COM 970-275-5176<br />
+                  <img id="facebook" src="./images/facebook.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+                  <img id="instagram" src="./images/instagram.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
               </p>
-              <img id="facebook" src="./images/facebook.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
-              <img id="instagram" src="./images/instagram.png" onmouseover="onHover(this);" onmouseout="offHover(this);"/>
+
       </footer>
 
 

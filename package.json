@@ -1,0 +1,29 @@
+{
+  "name": "permenenttraveler",
+  "version": "0.0.1",
+  "description": "website for Zach Smith's senior showcase",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css\" \"*.html\" \"*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schmidtp0740/PermanentTraveler.git"
+  },
+  "keywords": [
+    "permanent",
+    "traveler",
+    "senior",
+    "show",
+    "case",
+    "zach",
+    "smit",
+    "tattoo"
+  ],
+  "author": "Philip Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schmidtp0740/PermanentTraveler/issues"
+  },
+  "homepage": "https://github.com/schmidtp0740/PermanentTraveler#readme"
+}
