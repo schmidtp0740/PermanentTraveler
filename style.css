@@ -145,7 +145,7 @@ nav a:hover {
 }
 
 .missionStatement{
-    height: 50vh;
+    height: 80vh;
     width: auto;
     display: block;
     display: flex;
@@ -172,7 +172,7 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
-    background-position: center 10px;
+    background-position: center 50px;
     background-attachment: fixed;
 }
 #blakeParagraph{
@@ -191,7 +191,7 @@ nav a:hover {
     width: 75%;
     border-radius: 10px 10px;
     float: right;
-    padding-right: 10%;
+    margin-right: 10%;
 }
 
 #experianceStatement{
