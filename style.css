@@ -36,6 +36,10 @@
     align-items: center;
 }
 
+#logo{
+    width: 35%;
+    height: 50vh;
+}
 #nav2 {
     margin: 30px 0 0 0;
     padding: 0 0;
@@ -53,12 +57,21 @@ nav{
     background-color: #567D85;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
 .lileft  {
     float:left;
 }
 
+#navbarImage{
+    width: 3%;
+    height: 3%;
+    padding-top: 10px;
+}
 .liright{
     float:right;
 }
@@ -119,6 +132,7 @@ nav a:hover {
 #travelStatementParagraph {
     font-size: 50px;
     font-family: Quicksand;
+    padding-bottom: 20px;
 }
 
 #staircaseParallax{
@@ -150,6 +164,7 @@ nav a:hover {
     width: 75%;
     font-family: BebasNeue;
     font-size: 50px;
+    padding-bottom: 20px;
 }
 
 .blakeBackground{
@@ -162,14 +177,21 @@ nav a:hover {
 }
 #blakeParagraph{
     padding-top: 30px;
+    padding-bottom: 75px;
+    float: right;
+    padding-right: 5%;
+    width:90%;
+
     font-family: Quicksand;
     font-weight: bold;
 }
 
 #shareExperiance{
     box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.4);
-    width: 500px;
+    width: 75%;
     border-radius: 10px 10px;
+    float: right;
+    padding-right: 10%;
 }
 
 #experianceStatement{
