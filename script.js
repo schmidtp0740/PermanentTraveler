@@ -23,6 +23,9 @@ function onHover(element){
     else if(element.id === "nav2"){
         element.setAttribute('src', "./images/dropdownbutton-hover.png");
     }
+    else if(element.id === "submitbtn"){
+        element.setAttribute('src', "./images/SubmitButton-Hover.png");
+    }
 }
 
 function offHover(element){
@@ -50,6 +53,9 @@ function offHover(element){
     else if(element.id === "nav2"){
         element.setAttribute('src', "./images/dropdownbutton.png");
     }
+    else if(element.id === "submitbtn"){
+        element.setAttribute('src', "./images/SubmitButton.png");
+    }
 }
 
 var mn = $("nav");
@@ -66,4 +72,40 @@ $(window).scroll(function() {
     mn.removeClass(mns);
     ts.removeClass(tsc);
   }
+});
+
+$("#nav2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#navbar").offset().top
+    }, 2000);
+});
+
+$("#travelA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#travel").offset().top
+    }, 2000);
+});
+
+$("#tattoosA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#blakeSection").offset().top
+    }, 2000);
+});
+
+$("#homeA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#splashBackground").offset().top
+    }, 2000);
+});
+
+$("#missionA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#missionStatement").offset().top
+    }, 2000);
+});
+
+$("#contactA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2000);
 });

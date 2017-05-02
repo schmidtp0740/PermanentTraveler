@@ -68,9 +68,9 @@ nav{
 }
 
 #navbarImage{
-    width: 3%;
-    height: 3%;
-    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    padding-top: 0;
 }
 .liright{
     float:right;
@@ -85,6 +85,7 @@ nav a{
     font-size: 25px;
     font-family: Quicksand;
     text-decoration: none;
+    font-size: 30px;
 
 
 }
@@ -133,6 +134,7 @@ nav a:hover {
     font-size: 50px;
     font-family: Quicksand;
     padding-bottom: 20px;
+    color: #567D85;
 }
 
 #staircaseParallax{
@@ -145,14 +147,14 @@ nav a:hover {
 }
 
 .missionStatement{
-    height: 80vh;
+    height: 100vh;
     width: auto;
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align:center;
+    color: #567D85;
 }
 .missionStatementHeader{
     font-family: BebasNeue;
@@ -171,26 +173,30 @@ nav a:hover {
     background-image: url("./images/section-backdrop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 80vh;
-    background-position: center 50px;
+    min-height: 100vh;
+    background-position: center -50px;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    
 }
 #blakeParagraph{
-    padding-top: 30px;
     padding-bottom: 75px;
-    float: right;
-    padding-right: 5%;
+    padding-top: 0;
+    padding-right: 0%;
     width:90%;
-
-    font-family: Quicksand;
-    font-weight: bold;
+    color: white;
+    font-family: BebasNeue;
+    font-size: 50px;
 }
 
 #shareExperiance{
     box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.4);
-    width: 75%;
+    width: 70%;
     border-radius: 10px 10px;
-    float: right;
     margin-right: 10%;
 }
 
@@ -208,10 +214,16 @@ nav a:hover {
     font-weight: bold;
 }
 
+#contactHeader{
+    color: #b8847d;
+    font-family: BebasNeue;
+    padding-bottom: 50px;
+
+}
 .contactForm{
-    padding-top: 30px;
-    width: 30%;
-    display: flex;;
+    padding-top: 0px;
+    width: 60%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -222,12 +234,18 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-
-
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 30px;
 }
 
 
+
+#Modal{
+    position: fixed;
+    left: 50%;
+    
+}
 
 footer{
     color: #FFFFFF;
