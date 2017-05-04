@@ -80,32 +80,36 @@ $("#nav2").click(function() {
     }, 2000);
 });
 
-$("#travelA").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#travel").offset().top
-    }, 2000);
-});
+// $("#travelA").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#travel").offset().top
+//     }, 2000);
+// });
 
-$("#tattoosA").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#blakeSection").offset().top
-    }, 2000);
-});
+// $("#tattoosA").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#blakeSection").offset().top
+//     }, 2000);
+// });
 
 $("#homeA").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#splashBackground").offset().top
-    }, 2000);
-});
+     $('html, body').animate({
+         scrollTop: $("#splashBackground").offset().top
+     }, 2000 ,'easing');
+ });
 
-$("#missionA").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#missionStatement").offset().top
-    }, 2000);
-});
+// $("#missionA").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#missionStatement").offset().top
+//     }, 2000);
+// });
 
-$("#contactA").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 2000);
-});
+// $("#contactA").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#contact").offset().top
+//     }, 2000);
+// });
+
+// $("#submitbtn").click(function() {
+//     $('.form-control').val('');
+// });
