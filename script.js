@@ -77,39 +77,69 @@ $(window).scroll(function() {
 $("#nav2").click(function() {
     $('html, body').animate({
         scrollTop: $("#navbar").offset().top
-    }, 2000);
+    }, 2000,'easeInOutExpo');
 });
 
-// $("#travelA").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#travel").offset().top
-//     }, 2000);
-// });
+$("#travelA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#travel").offset().top
+    }, 2000,'easeInOutExpo');
+});
 
-// $("#tattoosA").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#blakeSection").offset().top
-//     }, 2000);
-// });
+$("#tattoosA").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#blakeSection").offset().top
+    }, 2000, 'easeInOutExpo');
+});
 
 $("#homeA").click(function() {
      $('html, body').animate({
          scrollTop: $("#splashBackground").offset().top
-     }, 2000 ,'easing');
+     }, 2000 ,'easeInOutExpo');
  });
 
-// $("#missionA").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#missionStatement").offset().top
-//     }, 2000);
-// });
+ $("#missionA").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#missionStatement").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
 
-// $("#contactA").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#contact").offset().top
-//     }, 2000);
-// });
+ $("#contactA").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
 
-// $("#submitbtn").click(function() {
-//     $('.form-control').val('');
-// });
+ $("#paris").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
+
+ $("#italy").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
+
+ $("#croatia").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
+
+ $("#london").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
+
+ $("#shareExperiance").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#contact").offset().top
+     }, 2000, 'easeInOutExpo');
+ });
+
+ $("#submitbtn").click(function() {
+     $('.form-control').val('');
+ });
